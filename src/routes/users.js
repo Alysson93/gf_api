@@ -5,4 +5,8 @@ router.get('/', (req, res) => {
   res.status(200).json(users);
 });
 
+router.post('/', (req, res) => {
+  res.status(201).json(req.body);
+});
+
 module.exports = router;
